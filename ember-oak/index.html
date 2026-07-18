@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Oak — Wood-Fired Kitchen</title>
+    <meta name="description" content="Ember & Oak is a wood-fired kitchen serving slow-cooked, fire-forward dishes. Reserve your table.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#home" class="logo">
+                <span class="logo__ember" aria-hidden="true"></span>
+                <span class="logo__text">Ember <em>&amp;</em> Oak</span>
+            </a>
+
+            <nav class="nav__links" id="navLinks">
+                <a href="#menu">Menu</a>
+                <a href="#desserts">Desserts</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="btn btn--ghost nav__cta">Reserve a Table</a>
+
+            <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+        </div>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div class="hero__bg img-bg" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80" aria-hidden="true"></div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <canvas class="hero__embers" id="emberCanvas" aria-hidden="true"></canvas>
+
+        <div class="hero__content">
+            <p class="eyebrow">Wood-Fired &middot; Est. 2014</p>
+            <h1 class="hero__title">
+                Ember <em>&amp;</em> Oak
+            </h1>
+            <p class="hero__tagline">Slow-cooked over live fire. Bold, unapologetic, seasonal.</p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Reserve a Table</a>
+                <a href="#menu" class="btn btn--outline">View Menu</a>
+            </div>
+        </div>
+
+        <a href="#menu" class="hero__scroll" aria-label="Scroll to menu">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ================= INTRO STRIP ================= -->
+    <section class="intro">
+        <div class="intro__inner reveal">
+            <p class="intro__text">Every plate that leaves our kitchen has touched the coals. We cook the way people did before ovens had dials — by reading the fire, not a thermostat.</p>
+            <div class="intro__stats">
+                <div class="stat">
+                    <span class="stat__num">11</span>
+                    <span class="stat__label">Years Over Fire</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num">100%</span>
+                    <span class="stat__label">Live-Fire Cooked</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num">28</span>
+                    <span class="stat__label">Seasonal Dishes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu" id="menu">
+        <div class="section__head reveal">
+            <p class="eyebrow">The Menu</p>
+            <h2 class="section__title">From the Coals</h2>
+            <p class="section__sub">Dishes built around live fire — charred, smoked, and slow-rendered.</p>
+        </div>
+
+        <div class="menu__grid">
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Charred Ribeye</h3>
+                        <span class="price">$48</span>
+                    </div>
+                    <p>28-day dry-aged, finished over oak embers, bone marrow butter.</p>
+                    <span class="tag">Chef's Signature</span>
+                </div>
+            </article>
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Whole Grilled Branzino</h3>
+                        <span class="price">$36</span>
+                    </div>
+                    <p>Line-caught, stuffed with citrus &amp; herbs, smoked chili oil.</p>
+                    <span class="tag">Gluten Free</span>
+                </div>
+            </article>
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Slow-Roasted Lamb Shoulder</h3>
+                        <span class="price">$42</span>
+                    </div>
+                    <p>Twelve-hour ember roast, pomegranate molasses, charred greens.</p>
+                    <span class="tag">Serves Two</span>
+                </div>
+            </article>
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Heirloom Beet &amp; Ash Salad</h3>
+                        <span class="price">$19</span>
+                    </div>
+                    <p>Fire-roasted beets, whipped goat cheese, charcoal crumb.</p>
+                    <span class="tag">Vegetarian</span>
+                </div>
+            </article>
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Ember-Grilled Wagyu Burger</h3>
+                        <span class="price">$26</span>
+                    </div>
+                    <p>Smoked cheddar, burnt onion jam, brioche, hand-cut fries.</p>
+                    <span class="tag">Bar Favorite</span>
+                </div>
+            </article>
+
+            <article class="dish-card reveal">
+                <div class="dish-card__img img-bg" data-src="https://images.socialsada.com/insecure/fit/1200/1200/sm/0/plain/https://static-data-assets.s3.ap-south-1.amazonaws.com/prods/ZQe0MWn1B5qKVeZYCPekm4QWTCrweFQTsPn8AJ86.jpg@webp"></div>
+                <div class="dish-card__body">
+                    <div class="dish-card__row">
+                        <h3>Smoked Mushroom Risotto</h3>
+                        <span class="price">$24</span>
+                    </div>
+                    <p>Wild mushrooms, charred leek ash, aged parmesan, oak smoke.</p>
+                    <span class="tag">Vegetarian</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ================= DESSERTS ================= -->
+    <section class="desserts" id="desserts">
+        <div class="section__head reveal">
+            <p class="eyebrow">Sweet Endings</p>
+            <h2 class="section__title">After the Fire</h2>
+            <p class="section__sub">Quiet, precise, and made to close the meal properly.</p>
+        </div>
+
+        <div class="desserts__grid">
+            <article class="dessert-card reveal">
+                <div class="dessert-card__img img-bg" data-src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"></div>
+                <h3>Burnt Basque Cheesecake</h3>
+                <p>Caramelized crust, vanilla bean, sea salt.</p>
+                <span class="price">$14</span>
+            </article>
+
+            <article class="dessert-card reveal">
+                <div class="dessert-card__img img-bg" data-src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"></div>
+                <h3>Dark Chocolate Ember Tart</h3>
+                <p>Smoked chocolate ganache, espresso crumb.</p>
+                <span class="price">$15</span>
+            </article>
+
+            <article class="dessert-card reveal">
+                <div class="dessert-card__img img-bg" data-src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"></div>
+                <h3>Charred Fig &amp; Honey</h3>
+                <p>Fire-roasted figs, mascarpone, warm honey, hazelnut.</p>
+                <span class="price">$13</span>
+            </article>
+
+            <article class="dessert-card reveal">
+                <div class="dessert-card__img img-bg" data-src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80"></div>
+                <h3>Smoked Vanilla Panna Cotta</h3>
+                <p>Oak-smoked cream, brown butter crumble.</p>
+                <span class="price">$12</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery" id="gallery">
+        <div class="section__head reveal">
+            <p class="eyebrow">Inside the Kitchen</p>
+            <h2 class="section__title">A Look Around</h2>
+        </div>
+
+        <div class="gallery__grid">
+            <div class="gallery__item gallery__item--tall img-bg reveal" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"></div>
+            <div class="gallery__item img-bg reveal" data-src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=700&q=80"></div>
+            <div class="gallery__item img-bg reveal" data-src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=700&q=80"></div>
+            <div class="gallery__item gallery__item--wide img-bg reveal" data-src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80"></div>
+            <div class="gallery__item img-bg reveal" data-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"></div>
+            <div class="gallery__item img-bg reveal" data-src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=700&q=80"></div>
+        </div>
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="reviews" id="reviews">
+        <div class="section__head reveal">
+            <p class="eyebrow">Word of Mouth</p>
+            <h2 class="section__title">What Guests Say</h2>
+        </div>
+
+        <div class="reviews__track-wrap reveal">
+            <div class="reviews__track" id="reviewsTrack">
+
+                <article class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__quote">The ribeye alone is worth the drive. Everything tastes like it was actually cooked by someone who cares about fire, not just a grill mark.</p>
+                    <div class="review-card__author">
+                        <span class="review-card__name">Priya Nair</span>
+                        <span class="review-card__meta">Regular Guest</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__quote">Best tasting menu we've had this year. The smoked panna cotta at the end genuinely stopped conversation at the table.</p>
+                    <div class="review-card__author">
+                        <span class="review-card__name">Marcus Lee</span>
+                        <span class="review-card__meta">Food Critic, The Weekly Table</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__quote">Warm room, sharp service, and a menu that doesn't try to do too much. Booked our anniversary dinner here again.</p>
+                    <div class="review-card__author">
+                        <span class="review-card__name">Elena Rossi</span>
+                        <span class="review-card__meta">Anniversary Dinner</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__quote">The lamb shoulder is unreal — falls apart, deeply smoky, not a bite wasted. This is fire cooking done properly.</p>
+                    <div class="review-card__author">
+                        <span class="review-card__name">David Okafor</span>
+                        <span class="review-card__meta">First-Time Guest</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="reviews__dots" id="reviewsDots"></div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <div class="contact__grid">
+            <div class="contact__info reveal">
+                <p class="eyebrow">Visit Us</p>
+                <h2 class="section__title section__title--light">Find Your Table</h2>
+
+                <ul class="info-list">
+                    <li>
+                        <span class="info-list__label">Address</span>
+                        <span class="info-list__value">214 Kiln Street, Portland, OR 97204</span>
+                    </li>
+                    <li>
+                        <span class="info-list__label">Phone</span>
+                        <span class="info-list__value"><a href="tel:+15035551928">(503) 555-1928</a></span>
+                    </li>
+                    <li>
+                        <span class="info-list__label">Email</span>
+                        <span class="info-list__value"><a href="mailto:hello@emberandoak.com">hello@emberandoak.com</a></span>
+                    </li>
+                    <li>
+                        <span class="info-list__label">Hours</span>
+                        <span class="info-list__value">
+            Tue&ndash;Thu &nbsp;5pm&ndash;10pm<br>
+            Fri&ndash;Sat &nbsp;5pm&ndash;11pm<br>
+            Sun &nbsp;4pm&ndash;9pm &nbsp;&middot;&nbsp; Mon Closed
+          </span>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact__form reveal" id="contactForm">
+                <div class="form__row">
+                    <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+                    <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" placeholder="(000) 000-0000">
+        </label>
+                </div>
+                <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label>
+                <label>
+        <span>Message</span>
+        <textarea name="message" rows="4" placeholder="Party size, date, and any requests"></textarea>
+      </label>
+                <button type="submit" class="btn btn--primary form__submit">Send Request</button>
+                <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#home" class="logo logo--footer">
+                <span class="logo__ember" aria-hidden="true"></span>
+                <span class="logo__text">Ember <em>&amp;</em> Oak</span>
+            </a>
+
+            <nav class="footer__links">
+                <a href="#menu">Menu</a>
+                <a href="#desserts">Desserts</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="footer__social">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="X / Twitter">X</a>
+                <a href="#" aria-label="Yelp">YP</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Ember &amp; Oak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
