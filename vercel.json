@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "routes": [
+        { "src": "/", "dest": "/ember-oak/index.html" },
+        { "src": "/(.*)", "dest": "/ember-oak/$1" }
+    ]
+}
